@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="Calc.css">
-    <script src="./js/Calc.js"></script>
+    <script src="./js/Calc.js" defer></script>
 </head>
 
 <body>
     <h1>Calculadora</h1>
-    <form action="#" class="box">
-        <input type="number" id="num1" placeholder="Primeiro número">
-        <input type="number" id="num2" placeholder="Segundo número">
 
-        <button id="btnCalcular" onclick="somar()">Somar</button>
+    <form action="#" class="box">
+        <input type="text" id="num1" placeholder="Primeiro número">
+        <input type="text" id="num2" placeholder="Segundo número">
+
+        <button type="button" id="btnCalcular">Somar</button>
     </form>
+
     <div class="box">
-        <p>Resultado: </p>
+        <p>Resultado:</p>
         <p id="resultado"></p>
     </div>
 </body>
